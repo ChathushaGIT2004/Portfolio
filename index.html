@@ -346,6 +346,25 @@ const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.c
  const timer=setInterval(()=>{n=Math.min(100,n+Math.ceil(Math.random()*12)); if(fill)fill.style.width=n+'%'; if(pct)pct.textContent=n+'%'; if(tip)tip.textContent=tips[Math.min(tips.length-1,Math.floor(n/25))]; if(n>=100){clearInterval(timer);setTimeout(()=>loader?.classList.add('done'),280)}},80);
  addEventListener('load',()=>{n=Math.max(n,90)});
  const wipe=document.getElementById('mcBlockWipe'); if(wipe){for(let i=0;i<48;i++){let b=document.createElement('i');b.style.transitionDelay=(Math.random()*.16)+'s';wipe.appendChild(b)}}
+ // GitHub Pages/browser back-forward cache fix:
+ // navigation can happen before the block-wipe cleanup timer fires, so the
+ // page may be cached while the full-screen wipe is still covering it.
+ const resetRestoredPage=()=>{
+   wipe?.classList.remove('play');
+   document.getElementById('mcTransition')?.classList.remove('show','active','play');
+   document.body.style.removeProperty('overflow');
+ };
+ addEventListener('pagehide',resetRestoredPage);
+ addEventListener('pageshow',e=>{
+   resetRestoredPage();
+   if(e.persisted) loader?.classList.add('done');
+   requestAnimationFrame(()=>{
+     document.querySelectorAll('.mc-section-reveal').forEach(section=>{
+       const r=section.getBoundingClientRect();
+       if(r.bottom>0 && r.top<innerHeight) section.classList.add('mc-in');
+     });
+   });
+ });
  document.querySelectorAll('section').forEach((el,i)=>{el.classList.add('mc-section-reveal'); if(i===0)el.classList.add('mc-in')});
  const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('mc-in')}),{threshold:.12});document.querySelectorAll('section').forEach(e=>sio.observe(e));
  const nav=[...document.querySelectorAll('.nav-links a[href^="#"]')], secs=[...document.querySelectorAll('section[id]')];
