@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "id": "smegrow",
+      "name": "S.M.E.G.R.O.W.",
+      "kicker": "FINAL YEAR PROJECT • 2026",
+      "brief": "AI-powered SME management and analytics platform combining business operations, accounting and intelligent insights.",
+      "logo": "",
+      "categories": [
+        "web",
+        "database"
+      ],
+      "tags": [
+        "FastAPI",
+        "PostgreSQL",
+        "Next.js",
+        "AI/ML",
+        "JWT"
+      ],
+      "featured": true,
+      "detailFile": "projects/smegrow/smegrow.json"
+    },
+    {
+      "id": "planora",
+      "name": "Planora",
+      "kicker": "WEB + MOBILE APPLICATION",
+      "brief": "Wedding planning platform for bookings, budgets, tasks and vendor communication with role-based functionality.",
+      "logo": "",
+      "categories": [
+        "web",
+        "mobile",
+        "database"
+      ],
+      "tags": [
+        "PHP",
+        "MySQL",
+        "Android",
+        "Firebase"
+      ],
+      "featured": false,
+      "detailFile": "projects/planora/planora.json"
+    },
+    {
+      "id": "health-lanka",
+      "name": "Health Lanka",
+      "kicker": "HEALTH RECORDS SYSTEM",
+      "brief": "Healthcare information system for patient records, medical history, appointments and secure user access.",
+      "logo": "projects/health-lanka/HealthLankaLogo.png",
+      "categories": [
+        "web",
+        "database"
+      ],
+      "tags": [
+        "HTML/CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "featured": false,
+      "detailFile": "projects/health-lanka/health-lanka.json"
+    },
+    {
+      "id": "invoice-hub",
+      "name": "Invoice Hub",
+      "kicker": "BUSINESS SOFTWARE",
+      "brief": "Invoice and transaction management solution with customer management, payment tracking and relational database integration.",
+      "logo": "",
+      "categories": [
+        "database"
+      ],
+      "tags": [
+        "Java",
+        "JDBC",
+        "MySQL",
+        "OOP"
+      ],
+      "featured": false,
+      "detailFile": "projects/invoice-hub/invoice-hub.json"
+    },
+    {
+      "id": "hotel-management",
+      "name": "Hotel Management",
+      "kicker": "MANAGEMENT SYSTEM",
+      "brief": "Operations system supporting reservations, room allocation, billing and guest-management workflows.",
+      "logo": "",
+      "categories": [
+        "web",
+        "database"
+      ],
+      "tags": [
+        "Java",
+        "JDBC",
+        "MySQL"
+      ],
+      "featured": false,
+      "detailFile": "projects/hotel-management/hotel-management.json"
+    }
+     
+  ]
+}

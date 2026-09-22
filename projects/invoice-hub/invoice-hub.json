@@ -1,0 +1,36 @@
+{
+  "id": "invoice-hub",
+  "name": "Invoice Hub",
+  "logo": "",
+  "kicker": "BUSINESS SOFTWARE",
+  "brief": "An invoice and transaction management system for small-business billing, customer records and payment tracking.",
+  "tags": [
+    "Java",
+    "JDBC",
+    "MySQL",
+    "OOP"
+  ],
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "Invoice Hub was built to reduce manual invoice work and keep customer, payment and transaction information organized."
+    },
+    {
+      "head2": "Main Features",
+      "ol": [
+        "Invoice generation",
+        "Customer management",
+        "Payment tracking",
+        "Transaction records",
+        "Relational database integration"
+      ]
+    },
+    {
+      "head2": "Development",
+      "p": "The project applies object-oriented Java design and JDBC-based communication with a MySQL database.",
+      "img": [
+        "projects/invoice-hub/screen-1.jpg"
+      ]
+    }
+  ]
+}

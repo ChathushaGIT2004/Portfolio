@@ -1,0 +1,54 @@
+{
+  "id": "planora",
+  "name": "Planora",
+  "logo": "projects/planora/PlanoraLogo.png",
+  "kicker": "WEB + MOBILE APPLICATION",
+  "brief": "A wedding planning platform that organizes bookings, budgets, tasks and vendor communication in one connected experience.",
+  "tags": [
+    "PHP",
+    "MySQL",
+    "Java",
+    "Android",
+    "Firebase"
+  ],
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "Planora was created to reduce the complexity of wedding planning by placing the main planning activities inside one organized system.",
+      "img": [
+        "projects/planora/overview-1.jpg",
+        "projects/planora/overview-2.jpg"
+      ]
+    },
+    {
+      "head2": "Problem & Goal",
+      "p": "Wedding planning often involves many disconnected notes, calls, chats and spreadsheets. Planora brings those activities together so users can follow the event from planning to completion."
+    },
+    {
+      "head2": "Core Features",
+      "ol": [
+        "Booking management",
+        "Budget planning and expense tracking",
+        "Task and checklist management",
+        "Vendor communication",
+        "Role-based access",
+        "Android mobile access"
+      ],
+      "description": "The web and mobile parts are designed around the same planning workflow so users can continue their work across devices.",
+      "img": [
+        "projects/planora/features-1.jpg",
+        "projects/planora/features-2.jpg"
+      ]
+    },
+    {
+      "head2": "Technology",
+      "ul": [
+        "HTML, CSS and JavaScript for the web interface",
+        "PHP for server-side functionality",
+        "MySQL for relational data",
+        "Java and Android for mobile functionality",
+        "Firebase for mobile-connected services"
+      ]
+    }
+  ]
+}

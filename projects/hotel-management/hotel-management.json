@@ -1,0 +1,31 @@
+{
+  "id": "hotel-management",
+  "name": "Hotel Management",
+  "logo": "",
+  "kicker": "MANAGEMENT SYSTEM",
+  "brief": "A hotel operations system that covers reservations, room allocation, billing and guest-management workflows.",
+  "tags": [
+    "Java",
+    "JDBC",
+    "MySQL"
+  ],
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "The system organizes the main guest journey from reservation to room allocation and billing."
+    },
+    {
+      "head2": "Operational Workflow",
+      "ol": [
+        "Create and manage reservations",
+        "Allocate rooms",
+        "Maintain guest information",
+        "Generate billing information",
+        "Store operational records in a relational database"
+      ],
+      "img": [
+        "projects/hotel-management/screen-1.jpg"
+      ]
+    }
+  ]
+}

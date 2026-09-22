@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>C.J. Dewmith | Software Portfolio</title>
+<meta content="C.J. Dewmith — software engineering portfolio featuring software solutions, web, mobile, database and development projects." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+:root{--bg:#08100d;--panel:#101b16;--panel2:#14241b;--text:#f4fff7;--muted:#a9b9ae;--green:#73d86c;--lime:#b6f36c;--line:#2d4636;--cyan:#72e7d4;--shadow:#020805}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:radial-gradient(circle at 80% 10%,#17341f 0,transparent 30%),linear-gradient(#08100d,#0b1510);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}.container{width:min(1180px,92%);margin:auto}.mono,.section-sub{font-family:'IBM Plex Mono',monospace}nav{position:sticky;top:0;z-index:50;background:rgba(5,12,8,.94);border-bottom:3px solid #243b2b;box-shadow:0 4px 0 #020805}.nav-container{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-family:'Pixelify Sans',sans-serif;font-size:30px;font-weight:700;color:#fff;text-decoration:none;text-shadow:3px 3px #000}.logo span{color:var(--green)}.nav-links{display:flex;gap:8px}.nav-links a,.mobile-nav-links a{color:#dce9df;text-decoration:none;padding:10px 13px;border:2px solid transparent;font-family:'Pixelify Sans';font-size:18px}.nav-links a:hover{border-color:#45674e;background:#14231a;color:#baf5a9}.mobile-menu-btn{display:none;background:#17271d;color:#fff;border:2px solid #42604a;padding:8px 12px}.mobile-menu{display:none}.hero-section{min-height:calc(100vh - 72px);display:grid;align-items:center;padding:70px 0 50px;position:relative;overflow:hidden}.hero-section:before{content:'';position:absolute;inset:0;opacity:.18;background-image:linear-gradient(90deg,#fff 1px,transparent 1px),linear-gradient(#fff 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent)}.hero-content{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:55px;align-items:center}.hero-tag{display:inline-block;border:2px solid #365840;background:#101e15;padding:8px 12px;color:#b9d9c1}.hero-title{font-family:'Pixelify Sans';font-size:clamp(58px,9vw,116px);line-height:.85;margin:25px 0 10px;letter-spacing:-3px;text-shadow:6px 6px #000,9px 9px #23482b}.hero-subtitle{font-family:'Pixelify Sans';font-size:clamp(28px,4vw,52px);margin:0;color:var(--lime)}.hero-description{max-width:760px;color:#c3d0c7;font-size:18px}.spec-strip{display:grid;grid-template-columns:repeat(2,1fr);border:2px solid var(--line);margin:28px 0;background:#0d1711}.spec-cell{padding:12px 15px;border:1px solid var(--line)}.spec-label{display:block;color:#779381;text-transform:uppercase;font:12px 'IBM Plex Mono'}.spec-value{font-weight:700}.hero-buttons,.profile-socials{display:flex;gap:10px;flex-wrap:wrap}.btn,.profile-social{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;background:#315e37;color:#fff;text-decoration:none;border:3px solid #74a86c;box-shadow:4px 4px 0 #020805;font-weight:700}.btn:hover,.profile-social:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #020805}.btn-outline{background:#17231b}.photo-plaque{background:#101c15;border:4px solid #395542;padding:12px;box-shadow:10px 10px 0 #020805;transform:rotate(1deg)}.photo-frame{aspect-ratio:4/5;background:linear-gradient(135deg,#1c3d25,#0a100d);overflow:hidden;display:grid;place-items:center}.photo-frame img{width:100%;height:100%;object-fit:cover}.photo-caption{display:flex;justify-content:space-between;padding:10px 4px 0;color:#9cb0a1;font-size:12px}section:not(.hero-section){padding:90px 0;border-top:1px solid #1d3023}.section-header{display:flex;gap:20px;align-items:center;margin-bottom:36px;padding-bottom:18px;border-bottom:3px solid #284432;position:relative}.section-header:after{content:'';position:absolute;bottom:-3px;left:0;width:120px;height:3px;background:var(--green);box-shadow:0 0 18px var(--green)}.section-index{font-family:'Pixelify Sans';font-size:30px;color:#7dbd77;background:#132218;border:2px solid #35563e;padding:3px 10px;box-shadow:4px 4px #030704}.section-header h2{font-family:'Pixelify Sans';font-size:clamp(38px,6vw,66px);line-height:1;margin:0;color:#fff;text-shadow:4px 4px #000}.section-sub{color:#8da797;margin-top:7px;font-size:13px}.about-content{display:grid;grid-template-columns:1.1fr .9fr;gap:36px}.about-text,.terminal,.tech-panel,.project-card,.contact-form,.contact-info,.hobby-card,.journey-card{background:linear-gradient(145deg,#101c15,#0c1510);border:3px solid #2a4533;box-shadow:7px 7px 0 #030704;padding:24px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:24px 0}.stat-item{background:#14241a;border:2px solid #35503c;padding:14px;text-align:center}.stat-number{display:block;font:32px 'Pixelify Sans';color:var(--lime)}.stat-label{font-size:12px;color:#9aafa0}.terminal-bar{display:flex;gap:8px;border-bottom:2px solid #2c4433;padding-bottom:12px;margin-bottom:16px}.terminal-dot{width:11px;height:11px;background:#4b7555;display:block}.terminal-body{font-family:'IBM Plex Mono';font-size:14px}.terminal-prompt{color:var(--lime);margin-right:10px}.terminal-output{color:#9fb0a4;padding:4px 0 10px 20px}.about-hobbies{grid-column:1/-1}.mini-section-head{display:flex;gap:12px;align-items:center;margin:30px 0 16px}.mini-section-head h3{font:32px 'Pixelify Sans';margin:0}.hobby-grid,.tech-grid,.projects-grid,.journey-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.hobby-card{display:flex;gap:18px}.hobby-icon{font-size:34px}.tech-grid{grid-template-columns:repeat(3,1fr)}.tech-panel h3{font:27px 'Pixelify Sans';margin:0}.panel-head{display:flex;gap:10px;align-items:center}.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.tag{background:#182b1e;border:2px solid #36553e;padding:4px 8px;font:12px 'IBM Plex Mono';color:#c9e7ce}.projects-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter-btn{background:#111e16;color:#cfe0d2;border:2px solid #36533d;padding:8px 14px;font-weight:700}.filter-btn.active,.filter-btn:hover{background:#315f38;color:#fff}.projects-grid{grid-template-columns:repeat(3,1fr)}.project-card h3{font:26px 'Pixelify Sans';margin:5px 0}.project-kicker{font:12px 'IBM Plex Mono';color:#81bd7e}.project-card p{color:#aebdb2}.project-card.featured{border-color:#5c8d62}.journey-section{background:rgba(18,35,24,.3)}.journey-grid{grid-template-columns:repeat(3,1fr)}.journey-year{font:30px 'Pixelify Sans';color:var(--lime)}.contact-content{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-method{display:flex;gap:12px;margin:14px 0}.contact-icon{width:42px;height:42px;display:grid;place-items:center;background:#17301e;border:2px solid #3c6245}.contact-details h4,.contact-details p{margin:0}.form-group{margin-bottom:15px}.form-label{display:block;margin-bottom:6px;font-weight:700}.form-control{width:100%;padding:12px;background:#09110c;color:#fff;border:2px solid #34503b;outline:none}.form-control:focus{border-color:#70b86d}.mc-footer{padding:45px 0 22px;background:#050b07;border-top:4px solid #2b4834}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:30px}.footer-nav{display:grid;gap:8px}.footer-nav a{color:#b5c6b9;text-decoration:none}.footer-bottom{display:flex;justify-content:space-between;border-top:1px solid #26382b;margin-top:30px;padding-top:16px;color:#829287}.xp-track{position:fixed;bottom:0;left:0;right:0;height:5px;background:#0a100c;z-index:100}.xp-track span{display:block;height:100%;width:0;background:#7ddc69}.xp-track b{display:none}.mc-particles{pointer-events:none;position:fixed;inset:0;z-index:-1}.pixel-particle{position:absolute;width:5px;height:5px;background:#80c477;opacity:.18;animation:float 8s linear infinite}@keyframes float{from{transform:translateY(105vh) rotate(0)}to{transform:translateY(-10vh) rotate(180deg)}}.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}@media(max-width:900px){.nav-links{display:none}.mobile-menu-btn{display:block}.mobile-menu.open{display:block;background:#08100c;border-top:2px solid #263e2e}.mobile-nav-links{display:grid;padding:10px 4%}.hero-content,.about-content,.contact-content{grid-template-columns:1fr}.photo-plaque{max-width:420px;margin:auto}.tech-grid,.projects-grid,.journey-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.hero-section{padding-top:45px}.hero-title{font-size:58px}.spec-strip,.stats,.tech-grid,.projects-grid,.journey-grid,.hobby-grid,.footer-grid{grid-template-columns:1fr}.section-header{align-items:flex-start}.section-header h2{font-size:42px}.footer-bottom{flex-direction:column;gap:6px}.profile-social span{display:none}}
+</style>
+
+<style id="minecraft-motion-pack">
+html{scroll-behavior:smooth} body{overflow-x:hidden}
+/* Minecraft world loader */
+.mc-world-loader{position:fixed;inset:0;z-index:99999;background:#101712;display:grid;place-items:center;transition:opacity .55s steps(5),visibility .55s;image-rendering:pixelated}.mc-world-loader.done{opacity:0;visibility:hidden;pointer-events:none}.mc-load-box{width:min(620px,84vw);text-align:center;color:#fff}.mc-load-logo{font-family:'Pixelify Sans',monospace;font-size:clamp(32px,7vw,72px);text-shadow:4px 4px #000;margin-bottom:18px;animation:mcBob 1.2s steps(2) infinite}.mc-load-tip{font:600 12px 'IBM Plex Mono',monospace;color:#b9c7b9;margin:12px}.mc-load-track{height:22px;border:4px solid #050705;background:#262b26;box-shadow:inset 0 0 0 2px #596159,0 5px 0 #050705;padding:3px}.mc-load-fill{height:100%;width:0;background:repeating-linear-gradient(90deg,#67bd3c 0 14px,#58a832 14px 28px);transition:width .12s steps(10)}.mc-load-percent{font:700 12px 'IBM Plex Mono',monospace;margin-top:10px;color:#d9e8d2}
+/* block wipe between anchors */
+.mc-block-wipe{position:fixed;inset:0;z-index:9000;pointer-events:none;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(6,1fr);visibility:hidden}.mc-block-wipe i{background:#202820;transform:scale(0);transition:transform .18s steps(2)}.mc-block-wipe.play{visibility:visible}.mc-block-wipe.play i{transform:scale(1)}
+/* section reveal */
+section{position:relative}.mc-section-reveal{opacity:0;transform:translateY(36px) scale(.985);filter:brightness(.72);transition:opacity .65s steps(8),transform .65s cubic-bezier(.2,.8,.2,1),filter .65s}.mc-section-reveal.mc-in{opacity:1;transform:none;filter:none}.section-header h2,.mini-section-head h3{transform-origin:left center}.mc-in .section-header h2,.mc-in .mini-section-head h3{animation:mcTitle .6s steps(7) both}
+/* UI interactions */
+.btn,.filter-btn,.profile-social,.tech-panel,.project-card,.hobby-card,.journey-card,.contact-method{transition:transform .16s steps(2),box-shadow .16s steps(2),filter .16s}.btn:hover,.filter-btn:hover,.profile-social:hover{transform:translate(-2px,-3px);filter:brightness(1.15)}.project-card:hover,.tech-panel:hover,.hobby-card:hover,.journey-card:hover{transform:translateY(-7px);box-shadow:0 9px 0 rgba(0,0,0,.34),0 0 24px rgba(88,200,120,.13)}.project-card:active,.btn:active{transform:translateY(2px)}
+/* pixel cursor sparkle */
+.mc-cursor-pixel{position:fixed;width:7px;height:7px;background:#8bd45c;z-index:9999;pointer-events:none;box-shadow:7px 0 #d9f58b,0 7px #5a9d39;animation:mcSpark .5s steps(4) forwards}
+/* mining crack on click */
+.mc-click-crack{position:fixed;width:34px;height:34px;z-index:9998;pointer-events:none;border:2px dashed rgba(255,255,255,.6);transform:translate(-50%,-50%);animation:mcCrack .34s steps(4) forwards}
+/* nav active = selected hotbar slot */
+.nav-links a.mc-active{box-shadow:inset 0 -3px #7fc957;text-shadow:0 0 10px rgba(127,201,87,.55)}
+/* ambient torch flicker */
+.hero-tag,.section-index{animation:torchGlow 3.2s ease-in-out infinite}.photo-frame{animation:mcFloat 4.5s ease-in-out infinite}.xp-track{animation:xpPulse 2.8s ease-in-out infinite}
+@keyframes mcBob{50%{transform:translateY(-7px)}}@keyframes mcTitle{0%{opacity:0;transform:translateX(-22px);letter-spacing:.22em}100%{opacity:1;transform:none;letter-spacing:normal}}@keyframes mcSpark{to{opacity:0;transform:translateY(18px) rotate(90deg) scale(.2)}}@keyframes mcCrack{0%{opacity:1;transform:translate(-50%,-50%) scale(.4) rotate(0)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.5) rotate(30deg)}}@keyframes torchGlow{0%,100%{filter:brightness(1);text-shadow:none}48%{filter:brightness(1.15);text-shadow:0 0 9px rgba(137,219,84,.25)}52%{filter:brightness(.94)}}@keyframes mcFloat{50%{transform:translateY(-7px)}}@keyframes xpPulse{50%{filter:brightness(1.25)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.mc-section-reveal{opacity:1;transform:none;filter:none}}
+</style>
+
+<style id="project-page-link-css">
+.project-card{cursor:pointer;position:relative;overflow:hidden}.project-card:after{content:'OPEN FULL PROJECT  →';display:block;margin-top:18px;padding-top:10px;border-top:2px dashed #31533b;color:#83c982;font:11px 'IBM Plex Mono',monospace;letter-spacing:1px}.project-card:before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(140,255,145,.07) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s steps(8)}.project-card:hover:before{transform:translateX(120%)}
+</style>
+</head>
+<body><div class="mc-world-loader" id="mcWorldLoader"><div class="mc-load-box"><div class="mc-load-logo">C.J. DEWMITH</div><div class="mc-load-tip" id="mcLoadTip">GENERATING PORTFOLIO WORLD...</div><div class="mc-load-track"><div class="mc-load-fill" id="mcLoadFill"></div></div><div class="mc-load-percent" id="mcLoadPercent">0%</div></div></div><div class="mc-block-wipe" id="mcBlockWipe" aria-hidden="true"></div><div aria-hidden="true" class="mc-transition" id="mcTransition"><div class="mc-transition-grid"></div><div class="mc-transition-label mono">LOADING CHUNK...</div></div><div aria-hidden="true" class="mc-particles" id="mcParticles"></div>
+<div aria-hidden="true" class="mc-sky-noise"></div>
+<div aria-hidden="true" class="xp-track"><span id="xpFill"></span><b>PROJECT XP</b></div>
+<div class="corner-mark tl"></div>
+<div class="corner-mark tr"></div>
+<div class="corner-mark bl"></div>
+<div class="corner-mark br"></div>
+<!-- Navigation -->
+<nav>
+<div class="container nav-container">
+<a class="logo" href="#home">C.J.<span>DEW</span></a>
+<div class="nav-links">
+
+
+
+
+
+<a href="#home">Home</a><a href="#about">About Me</a><a href="#tech">Tech Stack</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div>
+<button aria-label="Toggle menu" class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-nav-links">
+
+
+
+
+
+
+<a href="#home">Home</a><a href="#about">About Me</a><a href="#tech">Tech Stack</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div>
+</div>
+</nav>
+<!-- Hero -->
+<section class="hero-section" id="home">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<div class="hero-tag mono">SOFTWARE ENGINEERING • WEB • MOBILE • DATABASE • AI</div>
+<h1 class="hero-title">C.J. Dewmith</h1>
+<h2 class="hero-subtitle">I Build Software Solutions</h2>
+<p class="hero-description">
+            Software Engineering student focused on turning ideas into practical software. Explore my web, mobile, database and intelligent-system projects, then see the technologies and tools I used to build them.
+          </p>
+<div class="spec-strip">
+<div class="spec-cell">
+<span class="spec-label">Location</span>
+<span class="spec-value">Kaluthara, Sri Lanka</span>
+</div>
+<div class="spec-cell">
+<span class="spec-label">Email</span>
+<span class="spec-value">Chathushadewmin@gmail.com</span>
+</div>
+<div class="spec-cell">
+<span class="spec-label">Phone</span>
+<span class="spec-value">+94 76 739 0095</span>
+</div>
+<div class="spec-cell">
+<span class="spec-label">Education</span>
+<span class="spec-value">ICBT Undergraduate</span>
+</div>
+</div>
+<div class="hero-buttons">
+<a class="btn" href="#" id="downloadCV"><i class="fas fa-download"></i> Download CV</a>
+<a class="btn btn-outline" href="#projects"><i class="fas fa-cubes"></i> Explore Projects</a>
+</div><div aria-label="Social profiles" class="profile-socials mc-hotbar">
+<a aria-label="GitHub profile" class="profile-social github" data-profile-missing="GitHub" href="#"><i class="fab fa-github"></i><span>GitHub</span></a>
+<a aria-label="LinkedIn profile" class="profile-social linkedin" data-profile-missing="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+<a aria-label="Facebook profile" class="profile-social facebook" data-profile-missing="Facebook" href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+</div>
+</div>
+<div class="photo-plaque">
+<div class="photo-frame">
+<span class="plaque-mark tl"></span>
+<span class="plaque-mark br"></span>
+<img alt="C.J Dewmith" src="images/ProfileImg.png" onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=&quot;font:48px Pixelify Sans;text-align:center;padding:80px 20px;color:#b6f36c&quot;>C.J.<br>DEWMITH</div>'"/>
+</div>
+<div class="photo-caption mono">
+<span>PLAYER PROFILE — PORTRAIT</span>
+<span>CJD</span>
+</div>
+</div>
+</div>
+</div>
+</section><section class="about-section" id="about">
+<div class="container">
+<div class="about-content">
+<div class="about-text">
+<div class="section-header" style="border:none; padding:0; margin-bottom:1.5rem;">
+<span class="section-index">01</span>
+<div><h2>About</h2></div>
+</div>
+<p><strong>My style is simple: think clearly, build smart, finish strong.</strong></p>
+<p>I enjoy turning ideas into working products — apps that solve real problems, systems that reduce workload, and interfaces that feel smooth and purposeful. Every project I build pushes me to sharpen my logic, improve my structure, and design with intention.</p>
+<p>I've developed mobile apps, invoicing platforms, and healthcare systems that reflect my approach: organized code, reliable workflows, and user-focused functionality.</p>
+<p>Right now I'm focused on growing as a developer who can build full solutions — from database design to UI, from backend logic to the final user experience. I'm still a student, but I work with the mindset of a professional: consistent, dedicated, and always levelling up.</p>
+<div class="stats">
+<div class="stat-item">
+<span class="stat-number" id="stat-projects">—</span>
+<span class="stat-label">Projects Built</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">3+</span>
+<span class="stat-label">Years Learning</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">100%</span>
+<span class="stat-label">Dedicated</span>
+</div>
+</div><div class="about-social-title mono">FIND ME ONLINE</div><div aria-label="Social profiles" class="profile-socials mc-hotbar">
+<a aria-label="GitHub profile" class="profile-social github" data-profile-missing="GitHub" href="#"><i class="fab fa-github"></i><span>GitHub</span></a>
+<a aria-label="LinkedIn profile" class="profile-social linkedin" data-profile-missing="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+<a aria-label="Facebook profile" class="profile-social facebook" data-profile-missing="Facebook" href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+</div>
+</div>
+<div class="terminal">
+<div class="terminal-bar">
+<span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+<span>whoami.sh</span>
+</div>
+<div class="terminal-body">
+<div class="terminal-line"><span class="terminal-prompt">$</span><span class="terminal-command">skills --list</span></div>
+<div class="terminal-output">Mobile: Android, Java</div>
+<div class="terminal-output">Web: JavaScript, React, Node.js, PHP</div>
+<div class="terminal-output">Database: MySQL, SQLite, Firebase</div>
+<div class="terminal-line"><span class="terminal-prompt">$</span><span class="terminal-command">projects --featured</span></div>
+<div class="terminal-output">Planora | Health Lanka</div>
+<div class="terminal-line"><span class="terminal-prompt">$</span><span class="terminal-command">philosophy</span></div>
+<div class="terminal-output">Think clearly. Build smart. Finish strong.</div>
+</div>
+</div>
+</div>
+<div class="about-hobbies"><div class="mini-section-head"><span class="mc-mini-icon">✦</span><div><h3>Hobbies &amp; Creative Side</h3><p>What I enjoy outside my main software projects.</p></div></div><div class="hobby-grid">
+<article class="hobby-card mc-slot"><div class="hobby-icon">⛏</div><div><h3>Minecraft &amp; Mod Building</h3><p>I enjoy playing Minecraft and experimenting with mods and custom game ideas. It is a hobby that also lets me explore logic, systems and creative programming.</p></div></article>
+<article class="hobby-card mc-slot"><div class="hobby-icon">✦</div><div><h3>Design Experiments</h3><p>I like exploring interface design, graphics and unusual visual concepts, then bringing the strongest ideas into practical software interfaces.</p></div></article>
+</div></div></div>
+</section><section class="tech-categories" id="tech">
+<div class="container">
+<div class="section-header">
+<span class="section-index">02</span>
+<div>
+<h2>Tech &amp; Tools</h2>
+<div class="section-sub mono">CLASSIFIED BY HOW I USE THEM</div>
+</div>
+</div>
+<div class="tech-grid">
+<div class="tech-panel">
+<div class="panel-head"><i class="fas fa-code"></i><h3>Frontend</h3></div>
+<p>Responsive, interactive interfaces.</p>
+<div class="tag-row">
+<span class="tag">HTML5/CSS3</span>
+<span class="tag">JavaScript</span>
+<span class="tag">React</span>
+</div>
+</div>
+<div class="tech-panel">
+<div class="panel-head"><i class="fas fa-server"></i><h3>Backend</h3></div>
+<p>Server-side logic and APIs.</p>
+<div class="tag-row">
+<span class="tag">PHP</span>
+<span class="tag">Python</span>
+<span class="tag">Java</span>
+<span class="tag">Node.js</span>
+</div>
+</div>
+<div class="tech-panel">
+<div class="panel-head"><i class="fas fa-database"></i><h3>Database</h3></div>
+<p>Data modelling and storage.</p>
+<div class="tag-row">
+<span class="tag">MySQL</span>
+<span class="tag">SQLite</span>
+<span class="tag">Firebase</span>
+</div>
+</div>
+<div class="tech-panel">
+<div class="panel-head"><i class="fas fa-mobile-alt"></i><h3>Mobile</h3></div>
+<p>Native Android applications.</p>
+<div class="tag-row">
+<span class="tag">Android</span>
+<span class="tag">Java</span>
+</div>
+</div>
+<div class="tech-panel"><div class="panel-head"><i class="fas fa-brain"></i><h3>AI & Analytics</h3></div><p>Machine learning, BI and intelligent features.</p><div class="tag-row"><span class="tag">XGBoost</span><span class="tag">scikit-learn</span><span class="tag">Power BI</span><span class="tag">R</span></div></div><div class="tech-panel"><div class="panel-head"><i class="fas fa-toolbox"></i><h3>Developer Tools</h3></div><p>Tools I use to build, test and ship software.</p><div class="tag-row"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">VS Code</span><span class="tag">IntelliJ</span></div></div></div></div></section><section class="projects-section" id="projects">
+<div class="container">
+<div class="section-header">
+<span class="section-index">03</span>
+<div>
+<h2>Software Projects</h2>
+<div class="section-sub mono">THE MAIN PART OF MY PORTFOLIO — SOLUTIONS I HAVE BUILT</div>
+</div>
+</div>
+<div class="projects-filter">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="mobile">Mobile</button>
+<button class="filter-btn" data-filter="web">Web</button>
+<button class="filter-btn" data-filter="database">Database</button>
+</div>
+<!-- Populated from data.js by main.js — add a project there, not here -->
+<div class="projects-grid" id="projects-grid">
+<article class="project-card featured" data-project-id="smegrow" data-detail="projects/smegrow/smegrow.json" data-category="web database"><div class="project-kicker">FINAL YEAR PROJECT • 2026</div><h3>S.M.E.G.R.O.W.</h3><p>AI-powered SME management and analytics platform combining sales, inventory, customers, suppliers, finance, accounting and intelligent insights.</p><div class="tag-row"><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Next.js</span><span class="tag">AI/ML</span><span class="tag">JWT</span></div></article>
+<article class="project-card" data-project-id="planora" data-detail="projects/planora/planora.json" data-category="web mobile database"><div class="project-kicker">WEB + MOBILE</div><h3>Planora</h3><p>Wedding planning platform for bookings, budgets, tasks and vendor communication with role-based functionality.</p><div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Android</span><span class="tag">Firebase</span></div></article>
+<article class="project-card" data-project-id="health-lanka" data-detail="projects/health-lanka/health-lanka.json" data-category="web database"><div class="project-kicker">HEALTH SYSTEM</div><h3>Health Lanka</h3><p>Healthcare information system for patient records, medical history, appointments and secure user access.</p><div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span></div></article>
+<article class="project-card" data-project-id="invoice-hub" data-detail="projects/invoice-hub/invoice-hub.json" data-category="database"><div class="project-kicker">BUSINESS SOFTWARE</div><h3>Invoice Hub</h3><p>Invoice and transaction management solution with customer management, payment tracking and relational database integration.</p><div class="tag-row"><span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">MySQL</span><span class="tag">OOP</span></div></article>
+<article class="project-card" data-project-id="hotel-management" data-detail="projects/hotel-management/hotel-management.json" data-category="web database"><div class="project-kicker">MANAGEMENT SYSTEM</div><h3>Hotel Management</h3><p>Operations system supporting reservations, room allocation, billing and guest-management workflows.</p><div class="tag-row"><span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">MySQL</span></div></article>
+<article class="project-card" data-project-id="minecraft-portfolio" data-detail="projects/minecraft-portfolio/minecraft-portfolio.json" data-category="web"><div class="project-kicker">PERSONAL PROJECT</div><h3>Minecraft Portfolio</h3><p>This responsive portfolio: a software-first personal website with Minecraft-inspired UI, pixel interactions and animated sections.</p><div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">UI/UX</span></div></article>
+</div>
+</div>
+</section><section class="journey-section" id="journey"><div class="container"><div class="section-header"><span class="section-index">04</span><div><h2>Developer Journey</h2><div class="section-sub mono">LEARNING • BUILDING • IMPROVING</div></div></div><div class="journey-grid"><article class="journey-card"><div class="journey-year">FOUNDATION</div><h3>Software Engineering</h3><p>Built a foundation in OOP, databases, networking, web, mobile, data structures and software project work.</p></article><article class="journey-card"><div class="journey-year">BUILD</div><h3>Full Solutions</h3><p>Moved from individual coding exercises to database-driven systems, APIs, authentication and complete user workflows.</p></article><article class="journey-card"><div class="journey-year">NOW</div><h3>AI + Business Systems</h3><p>Exploring intelligent software, analytics and practical systems that solve real operational problems.</p></article></div></div></section><section class="contact-section" id="contact">
+<div class="container">
+<div class="contact-content">
+<div class="contact-info">
+<div class="section-header" style="border:none; padding:0; margin-bottom:1.5rem;">
+<span class="section-index">05</span>
+<div><h2>Contact</h2></div>
+</div>
+<p>I'm always open to discussing new projects, ideas, or opportunities to be part of your vision.</p>
+<div class="contact-methods">
+<div class="contact-method">
+<div class="contact-icon"><i class="fas fa-envelope"></i></div>
+<div class="contact-details"><h4>Email</h4><p>Chathushadewmin@gmail.com</p></div>
+</div>
+<div class="contact-method">
+<div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+<div class="contact-details"><h4>Phone</h4><p>+94 76 739 0095</p></div>
+</div>
+<div class="contact-method">
+<div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+<div class="contact-details"><h4>Location</h4><p>Kaluthara, Sri Lanka</p></div>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<form id="contactForm">
+<div class="form-group">
+<label class="form-label" for="name">Your Name</label>
+<input class="form-control" id="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="email">Your Email</label>
+<input class="form-control" id="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="subject">Subject</label>
+<input class="form-control" id="subject" placeholder="Project inquiry or collaboration" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="message">Message</label>
+<textarea class="form-control" id="message" placeholder="Tell me about your project..." required="" rows="5"></textarea>
+</div>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+
+<!-- Projects -->
+
+<!-- About -->
+
+<!-- Hobbies -->
+
+<!-- Contact -->
+
+<!-- Footer -->
+
+<footer class="mc-footer">
+<div aria-hidden="true" class="footer-skyline"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="container footer-grid">
+<div><a class="logo footer-logo" href="#home">C.J.<span>DEW</span></a><p>Software Engineering student building practical software solutions, with a little Minecraft inspiration.</p></div>
+<div class="footer-nav"><strong>QUICK TRAVEL</strong><a href="#about">About Me</a><a href="#tech">Tech Stack</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div>
+<div><strong>CONNECT</strong><div aria-label="Social profiles" class="profile-socials mc-hotbar">
+<a aria-label="GitHub profile" class="profile-social github" data-profile-missing="GitHub" href="#"><i class="fab fa-github"></i><span>GitHub</span></a>
+<a aria-label="LinkedIn profile" class="profile-social linkedin" data-profile-missing="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+<a aria-label="Facebook profile" class="profile-social facebook" data-profile-missing="Facebook" href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+</div></div>
+</div><div class="container footer-bottom"><span>© 2026 C.J. Dewmith</span><span class="mono">BUILD • LEARN • CREATE</span></div>
+</footer>
+<script>
+const menuBtn=document.getElementById('mobileMenuBtn'), menu=document.getElementById('mobileMenu'); if(menuBtn)menuBtn.onclick=()=>menu.classList.toggle('open');
+document.querySelectorAll('.mobile-nav-links a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+document.querySelectorAll('.filter-btn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.project-card').forEach(c=>c.style.display=f==='all'||(c.dataset.category||'').includes(f)?'block':'none')});
+const xp=document.getElementById('xpFill'); addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight; if(xp)xp.style.width=(h?scrollY/h*100:0)+'%'});
+for(let i=0;i<28;i++){let p=document.createElement('i');p.className='pixel-particle';p.style.left=Math.random()*100+'%';p.style.animationDelay=-Math.random()*8+'s';p.style.animationDuration=6+Math.random()*8+'s';document.getElementById('mcParticles')?.appendChild(p)}
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.08});document.querySelectorAll('.tech-panel,.project-card,.hobby-card,.journey-card').forEach(e=>{e.classList.add('reveal');io.observe(e)});
+</script>
+<script>
+    document.getElementById('stat-projects').textContent = document.querySelectorAll('.project-card').length + '+';
+
+    document.getElementById('downloadCV').addEventListener('click', function (e) {
+      e.preventDefault();
+      // TODO: point this at your actual CV file, e.g. "CJ_Dewmith_CV.pdf"
+      const original = this.innerHTML;
+      this.innerHTML = '<i class="fas fa-info-circle"></i> Add your CV file link';
+      setTimeout(() => { this.innerHTML = original; }, 2500);
+    });
+  </script>
+
+<script id="minecraft-motion-js">
+(()=>{
+ const loader=document.getElementById('mcWorldLoader'),fill=document.getElementById('mcLoadFill'),pct=document.getElementById('mcLoadPercent'),tip=document.getElementById('mcLoadTip');
+ const tips=['GENERATING PORTFOLIO WORLD...','LOADING PROJECT CHUNKS...','CRAFTING UI COMPONENTS...','SPAWNING PIXELS...','WORLD READY!']; let n=0;
+ const timer=setInterval(()=>{n=Math.min(100,n+Math.ceil(Math.random()*12)); if(fill)fill.style.width=n+'%'; if(pct)pct.textContent=n+'%'; if(tip)tip.textContent=tips[Math.min(tips.length-1,Math.floor(n/25))]; if(n>=100){clearInterval(timer);setTimeout(()=>loader?.classList.add('done'),280)}},80);
+ addEventListener('load',()=>{n=Math.max(n,90)});
+ const wipe=document.getElementById('mcBlockWipe'); if(wipe){for(let i=0;i<48;i++){let b=document.createElement('i');b.style.transitionDelay=(Math.random()*.16)+'s';wipe.appendChild(b)}}
+ document.querySelectorAll('section').forEach((el,i)=>{el.classList.add('mc-section-reveal'); if(i===0)el.classList.add('mc-in')});
+ const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('mc-in')}),{threshold:.12});document.querySelectorAll('section').forEach(e=>sio.observe(e));
+ const nav=[...document.querySelectorAll('.nav-links a[href^="#"]')], secs=[...document.querySelectorAll('section[id]')];
+ const nio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){nav.forEach(a=>a.classList.toggle('mc-active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-35% 0px -55%'});secs.forEach(s=>nio.observe(s));
+ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();wipe?.classList.add('play');setTimeout(()=>t.scrollIntoView({behavior:'smooth'}),180);setTimeout(()=>wipe?.classList.remove('play'),410)}));
+ let last=0;addEventListener('pointermove',e=>{if(Date.now()-last<70)return;last=Date.now();let p=document.createElement('i');p.className='mc-cursor-pixel';p.style.left=e.clientX+'px';p.style.top=e.clientY+'px';document.body.appendChild(p);setTimeout(()=>p.remove(),520)});
+ addEventListener('pointerdown',e=>{let c=document.createElement('i');c.className='mc-click-crack';c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';document.body.appendChild(c);setTimeout(()=>c.remove(),380)});
+})();
+</script>
+<script id="project-json-navigation-js">
+(()=>{
+  const grid=document.getElementById('projects-grid');
+  const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  function cardHTML(p){return `<article class="project-card${p.featured?' featured':''}" tabindex="0" role="link" aria-label="Open ${esc(p.name)} full project" data-project-id="${esc(p.id)}" data-detail="${esc(p.detailFile)}" data-category="${esc((p.categories||[]).join(' '))}"><div class="project-kicker">${esc(p.kicker||'PROJECT')}</div><h3>${esc(p.name)}</h3><p>${esc(p.brief||'')}</p><div class="tag-row">${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></article>`}
+  function bindCards(){
+    document.querySelectorAll('.project-card').forEach(card=>{
+      const open=()=>{ const id=card.dataset.projectId; if(!id)return; document.getElementById('mcBlockWipe')?.classList.add('play'); setTimeout(()=>location.href=`project.html?id=${encodeURIComponent(id)}`,180); };
+      card.onclick=open; card.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}};
+    });
+    const stat=document.getElementById('stat-projects'); if(stat)stat.textContent=document.querySelectorAll('.project-card').length+'+';
+  }
+  bindCards();
+  fetch('projects/project-list.json').then(r=>{if(!r.ok)throw new Error('project list');return r.json()}).then(data=>{
+    if(!grid||!Array.isArray(data.projects))return;
+    grid.innerHTML=data.projects.map(cardHTML).join('');
+    bindCards();
+    document.querySelectorAll('.project-card').forEach(e=>{e.classList.add('reveal');requestAnimationFrame(()=>e.classList.add('visible'))});
+  }).catch(()=>{ /* Static cards remain available when opened directly with file:// */ });
+})();
+</script>
+</body>
+</html>

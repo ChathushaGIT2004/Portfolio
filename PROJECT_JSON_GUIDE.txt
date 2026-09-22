@@ -1,0 +1,75 @@
+C.J. DEWMITH PORTFOLIO — PROJECT FOLDER STRUCTURE
+
+Each project has ONE folder. Keep that project JSON, logo, screenshots and every related image inside the SAME folder.
+
+STRUCTURE
+---------
+projects/
+  project-list.json
+  planora/
+    planora.json
+    logo.png
+    overview-1.jpg
+    overview-2.jpg
+    features-1.jpg
+  smegrow/
+    smegrow.json
+    logo.png
+    dashboard.jpg
+  health-lanka/
+    health-lanka.json
+    ...images...
+
+PROJECT LIST ENTRY
+------------------
+{
+  "id": "planora",
+  "name": "Planora",
+  "detailFile": "projects/planora/planora.json"
+}
+
+INSIDE projects/planora/planora.json
+------------------------------------
+{
+  "id": "planora",
+  "name": "Planora",
+  "logo": "projects/planora/logo.png",
+  "brief": "Project summary",
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "Paragraph text",
+      "img": [
+        "projects/planora/overview-1.jpg",
+        "projects/planora/overview-2.jpg"
+      ]
+    },
+    {
+      "head2": "Features",
+      "ol": ["Feature 1", "Feature 2", "Feature 3"],
+      "description": "Description after the list.",
+      "img": "projects/planora/features-1.jpg"
+    }
+  ]
+}
+
+The renderer prints keys in the same order they appear in each content object.
+Supported content keys include: head1, head2, head3, p, description, img, ol, ul, quote, code, links, spacer.
+
+To add a new project:
+1. Create projects/your-project/
+2. Put your-project.json and all project images inside it.
+3. Add the project to projects/project-list.json.
+4. Set detailFile to projects/your-project/your-project.json.
+5. Use image paths such as projects/your-project/screenshot.jpg.
+
+Run the site through VS Code Live Server (or another local server) because browsers can block JSON fetches when opened with file://.
+
+
+IMAGE DISPLAY RULES
+-------------------
+All project content images are displayed in a fixed 16:9 frame.
+- Recommended image size: 1600 x 900 px or 1280 x 720 px.
+- Images keep the same visual size/ratio across every project.
+- object-fit: cover is used, so oversized images are cropped from the center rather than stretched.
+- Project logos remain square/contained in the logo box and are not cropped.

@@ -1,0 +1,56 @@
+{
+  "id": "smegrow",
+  "name": "S.M.E.G.R.O.W.",
+  "logo": "projects/smegrow/logo.png",
+  "kicker": "FINAL YEAR PROJECT • 2026",
+  "brief": "An AI-powered SME management and analytics platform designed to connect important business operations, data and intelligent decision support.",
+  "tags": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Next.js",
+    "React",
+    "SQLAlchemy",
+    "JWT",
+    "AI/ML"
+  ],
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "S.M.E.G.R.O.W. is designed for small and medium enterprises that need one place to manage daily business operations while also gaining useful insights from their own data.",
+      "img": [
+        "projects/smegrow/dashboard.jpg"
+      ]
+    },
+    {
+      "head2": "Main Modules",
+      "ol": [
+        "Authentication and role-based access",
+        "Sales and invoice management",
+        "Inventory and stock movement tracking",
+        "Customers and suppliers",
+        "Expenses, payroll, assets and loans",
+        "Accounting, journals and statements",
+        "AI insights and business analytics"
+      ]
+    },
+    {
+      "head2": "Architecture",
+      "p": "The system separates the frontend, business API and machine-learning services so each part can grow independently.",
+      "img": [
+        "projects/smegrow/architecture.jpg"
+      ]
+    },
+    {
+      "head2": "What I Worked On",
+      "ul": [
+        "Backend architecture and REST APIs",
+        "PostgreSQL relational database design",
+        "Authentication and permissions",
+        "Business workflows",
+        "AI/ML integration",
+        "Frontend integration and deployment"
+      ]
+    }
+  ]
+}

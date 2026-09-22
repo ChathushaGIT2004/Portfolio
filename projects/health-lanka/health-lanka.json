@@ -1,0 +1,38 @@
+{
+  "id": "health-lanka",
+  "name": "Health Lanka",
+  "logo": "projects/health-lanka/HealthLankaLogo.png",
+  "kicker": "HEALTH RECORDS SYSTEM",
+  "brief": "A database-driven healthcare information system for managing patient information, medical history and appointments.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "MySQL"
+  ],
+  "content": [
+    {
+      "head1": "Project Overview",
+      "p": "Health Lanka focuses on organizing common healthcare records and workflows through a structured web interface."
+    },
+    {
+      "head2": "Functions",
+      "ol": [
+        "Patient record management",
+        "Medical history tracking",
+        "Appointment management",
+        "User authentication",
+        "Responsive database-driven interface"
+      ],
+      "img": [
+        "projects/health-lanka/HealthLankaLogo.png",
+        "projects/health-lanka/HealthLankaLogo.png"
+      ]
+    },
+    {
+      "head2": "Technology",
+      "p": "The application uses a traditional web stack with PHP handling server-side logic and MySQL storing relational data."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Put this project's images in this folder. Then reference them from the matching JSON file, for example: "projects/images/smegrow/image-name.jpg".
